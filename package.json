@@ -1,0 +1,39 @@
+{
+  "name": "traffic-light-emulator",
+  "version": "1.0.0",
+  "description": "test task light-traffic",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --config webpack.config.js",
+    "start:dev": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chernrus/traffic-light-emulator.git"
+  },
+  "keywords": [
+    "vue",
+    "webpack",
+    "test",
+    "task"
+  ],
+  "author": "Ruslan Chernov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chernrus/traffic-light-emulator/issues"
+  },
+  "homepage": "https://github.com/chernrus/traffic-light-emulator#readme",
+  "dependencies": {
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "css-loader": "^2.1.1",
+    "vue-loader": "^15.7.0",
+    "vue-router": "^3.0.2",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
+  }
+}
