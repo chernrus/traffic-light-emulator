@@ -1,4 +1,5 @@
 const path = require('path')
+const webpack = require('webpack')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 module.exports = {
@@ -33,6 +34,13 @@ module.exports = {
     contentBase: path.join(__dirname, './'),
     compress: true,
     port: 9000
+  },
+  resolve: {
+    extensions: ['.js', '.vue', '.json'],
+    alias: {
+      vue: 'vue/dist/vue.js',
+      '@': path.resolve('src')
+    }
   },
   plugins: [
     // убедитесь что подключили плагин!

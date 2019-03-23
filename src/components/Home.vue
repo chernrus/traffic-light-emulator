@@ -32,9 +32,11 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
+  name: 'Home',
+  data () {
+    return {
+      msg: 'Welcome to Your Vue.js App'
+    }
   }
 }
 </script>
