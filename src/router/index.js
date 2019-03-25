@@ -15,19 +15,28 @@ export default new VueRouter({
     {
       path: '/1',
       name: 'Red signal',
-      props: { a: 1 },
+      props: {
+        lightNumber: 1,
+        startTime: 10
+      },
       component: TrafficLight,
     },
     {
       path: '/2',
       name: 'Yellow signal',
-      props: { a: 2 },
+      props: {
+        lightNumber: 2,
+        startTime: 3
+      },
       component: TrafficLight
     },
     {
       path: '/3',
       name: 'Green signal',
-      props: { a: 3 },
+      props: {
+        lightNumber: 3,
+        startTime: 15
+      },
       component: TrafficLight
     }
   ]
