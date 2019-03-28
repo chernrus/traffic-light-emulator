@@ -139,7 +139,8 @@ export default {
   .traffic-light {
     width: 150px;
     height: 450px;
-    background-color: #ccc;
+    background-color: #444444;
+    border-radius: 10px;
 
     display: flex;
     flex-direction: column;

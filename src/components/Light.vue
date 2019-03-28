@@ -35,18 +35,30 @@
   }
 
   .red {
-    background-color: #D03526;
-    color: #D03526;
+    color: red;
+    background: red;
+    background-color: red;
+    background-image: radial-gradient(brown,transparent);
+    background-size: 5px 5px;
+    box-shadow: 0 0 20px #111 inset;
   }
 
   .yellow {
-    background-color: #FFB321;
-    color: #FFB321;
+    color: yellow;
+    background: yellow;
+    background-color: yellow;
+    background-image: radial-gradient(orange,transparent);
+    background-size: 5px 5px;
+    box-shadow: 0 0 20px #111 inset;
   }
 
   .green {
-    background-color: #A6CE39;
-    color: #A6CE39;
+    color: green;
+    background-color: green;
+    background: green;
+    background-image: radial-gradient(lime,transparent);
+    background-size: 5px 5px;
+    box-shadow: 0 0 20px #111 inset;
   }
 
   .light__dim-layer {
@@ -76,11 +88,11 @@
   }
 
   @keyframes textBlink {
-    /* 0% { color: inherit; }
-    25% { color: #000 }
+    0% { color: inherit; }
+    25% { color: #fff; }
     50% { color: inherit; }
-    75% { color: #000 }
-    100% { color: inherit; } */
+    75% { color: #fff; }
+    100% { color: inherit; }
   }
 
   .blink {
