@@ -4,12 +4,10 @@
     <router-link to="/2">Yellow</router-link>
     <router-link to="/3">Green</router-link>
     <router-view/>
-
   </div>
 </template>
 
 <script>
-
 export default {
   name: 'app'
 }
