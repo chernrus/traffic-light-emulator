@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+import cfg from '@/config.js';
 import TrafficLight from '@/components/TrafficLight';
 import NotFound from '@/components/NotFound';
 
@@ -12,33 +13,33 @@ export default new VueRouter({
       redirect: '/2'
     },
     {
-      path: '*', 
+      path: '*',
       component: NotFound
     },
     {
-      path: '/1',
       name: 'Red signal',
+      path: cfg.red.path,
       props: {
-        lightNumber: 1,
-        startTime: 10
+        lightNumber: cfg.red.id,
+        startTime: cfg.red.time
       },
       component: TrafficLight,
     },
     {
-      path: '/2',
       name: 'Yellow signal',
+      path: cfg.yellow.path,
       props: {
-        lightNumber: 2,
-        startTime: 3
+        lightNumber: cfg.yellow.id,
+        startTime: cfg.yellow.time
       },
       component: TrafficLight
     },
     {
-      path: '/3',
       name: 'Green signal',
+      path: cfg.green.path,
       props: {
-        lightNumber: 3,
-        startTime: 15
+        lightNumber: cfg.green.id,
+        startTime: cfg.green.time
       },
       component: TrafficLight
     }
