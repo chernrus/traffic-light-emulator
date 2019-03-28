@@ -60,5 +60,8 @@ typings/
 # next.js build output
 .next
 
-#build folder
-dist
+#dev
+src
+package.json
+package-lock.json
+webpack.config.js
