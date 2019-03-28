@@ -17,16 +17,19 @@ module.exports = {
         test: /\.vue$/,
         loader: 'vue-loader'
       },
-      // {
-      //   test: /\.js$/,
-      //   loader: 'babel-loader'
-      // },
       {
         test: /\.css$/,
         use: [
           'vue-style-loader',
           'css-loader'
         ]
+      },
+      {
+        test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|eot|ttf)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]?[hash]'
+        }
       }
     ]
   },
@@ -43,7 +46,6 @@ module.exports = {
     }
   },
   plugins: [
-    // убедитесь что подключили плагин!
     new VueLoaderPlugin()
   ]
 }

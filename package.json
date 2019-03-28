@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack --config webpack.config.js",
-    "start:dev": "webpack-dev-server"
+    "start:dev": "webpack-dev-server",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -23,12 +25,14 @@
   "bugs": {
     "url": "https://github.com/chernrus/traffic-light-emulator/issues"
   },
-  "homepage": "https://github.com/chernrus/traffic-light-emulator#readme",
+  "homepage": "https://chernrus.github.io/traffic-light-emulator",
   "dependencies": {
     "vue": "^2.6.10"
   },
   "devDependencies": {
     "css-loader": "^2.1.1",
+    "file-loader": "^3.0.1",
+    "gh-pages": "^2.0.1",
     "vue-loader": "^15.7.0",
     "vue-router": "^3.0.2",
     "vue-template-compiler": "^2.6.10",

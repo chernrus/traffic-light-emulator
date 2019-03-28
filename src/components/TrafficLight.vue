@@ -141,6 +141,7 @@ export default {
     height: 450px;
     background-color: #444444;
     border-radius: 10px;
+    margin: 10px auto;
 
     display: flex;
     flex-direction: column;
