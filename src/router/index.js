@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Home from '@/components/Home';
 import TrafficLight from '@/components/TrafficLight';
+import NotFound from '@/components/NotFound';
 
 Vue.use(VueRouter);
 
@@ -9,8 +9,11 @@ export default new VueRouter({
   routes: [
     {
       path: '/',
-      name: 'Home',
-      component: Home
+      redirect: '/2'
+    },
+    {
+      path: '*', 
+      component: NotFound
     },
     {
       path: '/1',
